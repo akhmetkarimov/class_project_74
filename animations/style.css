@@ -1,0 +1,90 @@
+.box {
+    width: 100px;
+    height: 100px;
+    animation-name: change_color;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+}
+
+@keyframes change_color {
+    from {
+        /* transform: skew(45deg); */
+        /* transform: rotate(-360deg); */
+        /* transform: translate(0, 500px); */
+        /* transform: scale(n); n=[0,inf]-масштаб */
+        /* transform:scaleX(n)|scaleY(n) */
+        /*rotate(30deg)- вращение(градусы)
+                skew- уклон
+                owerflo:hidden - скрывает текст */
+    }
+    10% {
+        background-color: black;
+    }
+    20% {
+        background-color: violet;
+    }
+    to {
+        background-color: aqua;
+    }
+}
+
+.runtext {
+    font-size: 2rem;
+    animation-name: running_text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes running_text {
+    from {
+        transform: translateX(-10%);
+    }
+    to {
+        transform: translateX(110%);
+        opacity: 0;
+    }
+}
+
+.circle_box {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    opacity: 0;
+    animation: circle_box_change 2s infinite alternate;
+}
+
+
+/* @keyframes circle_box_change {
+    0% {
+        border-radius: 0%;
+        transform: rotate(0);
+    }
+    25% {
+        border-radius: 50% 0 0 0;
+        transform: rotate(30deg);
+    }
+    50% {
+        border-radius: 50% 50% 0 0;
+        transform: rotate(60deg);
+    }
+    75% {
+        border-radius: 50% 50% 50% 0;
+        transform: rotate(90deg);
+    }
+    100% {
+        border-radius: 50%;
+        transform: rotate(120deg);
+    }
+} */
+
+@keyframes circle_box_change {
+    0% {
+        border-radius: 50%;
+        transform: rotate(120deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,54 @@
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_inner a {
+    color: #fff;
+}
+
+.header_logo img {
+    width: 100%;
+}
+
+.nav_list {
+    display: flex;
+}
+
+.nav_list li:not(:last-child) {
+    margin-right: 25px;
+}
+
+.nav_list a {
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 30px;
+    transition: .5s;
+}
+
+.nav_list a:hover {
+    border-color: #00a9da;
+}
+
+.header_socials a {
+    background: #2ab5f6;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_socials a:not(:last-child) {
+    margin-right: 10px;
+}
