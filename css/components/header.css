@@ -52,3 +52,19 @@
 .header_socials a:not(:last-child) {
     margin-right: 10px;
 }
+
+.mobile_bar {
+    display: none;
+    color: #fff;
+    font-size: 2rem;
+}
+
+@media (max-width: 1070px) {
+    .header_nav,
+    .header_socials {
+        display: none;
+    }
+    .mobile_bar {
+        display: block;
+    }
+}

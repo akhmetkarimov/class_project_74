@@ -1,0 +1,33 @@
+.main_consult {
+    background-image: url('../../images/bgs/content_bg.jpg');
+    background-attachment: fixed;
+}
+
+.consult_inner.wrap {
+    align-items: center;
+}
+
+.consult_row {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.consult_row .hr {
+    width: 45%;
+    margin: 0;
+}
+
+.consult_text h4 {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.consult_text p {
+    font-style: italic;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 100;
+}

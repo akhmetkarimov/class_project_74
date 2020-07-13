@@ -4,7 +4,7 @@
     animation-name: change_color;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    /* animation-direction: alternate; */
+    /* animation-direction: alternate(работает плавно туда сюда); */
 }
 
 @keyframes change_color {
@@ -46,12 +46,28 @@
     }
 }
 
+
+/* .circle_box {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    opacity: 0;
+}
+
+.circle_box:hover {
+    animation: circle_box_change 2s infinite alternate;
+} */
+
 .circle_box {
     width: 200px;
     height: 200px;
     background-color: coral;
     opacity: 0;
     animation: circle_box_change 2s infinite alternate;
+}
+
+.circle_box:hover {
+    animation-play-state: paused;
 }
 
 
@@ -86,5 +102,26 @@
     100% {
         opacity: 1;
         transform: rotate(360deg);
+    }
+}
+
+.show_text {
+    width: 300px;
+    height: 200px;
+    border: 4px solid tomato;
+    border-radius: 15px;
+    margin: 30px 0;
+    padding: 15px;
+    transform: translate(-120%);
+    opacity: 0;
+    animation-name: show_text;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes show_text {
+    100% {
+        opacity: 1;
+        transform: translate(0);
     }
 }
