@@ -15,6 +15,27 @@
     font-weight: bold;
 }
 
+
+/* .text_block h2::selection {
+    color: lime;
+    background-color: hotpink;
+} */
+
+
+/* 
+.text_block h2::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    bottom: 0;
+    left: 50%;
+    background-color: red;
+    width: 10%;
+    height: 10px;
+    transform: skew(50deg) rotate(50deg);
+} */
+
 .text_block h4 {
     font-size: 1rem;
     font-weight: bold;

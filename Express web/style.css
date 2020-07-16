@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #ccc;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    padding: 15px 0;
+}
+
+.header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.under_header {
+    background-color: salmon;
+    padding: 200px 0 150px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.section_padding {
+    padding: 60px 0;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img_block {
+    width: 30%;
+}
+
+.img_block img {
+    width: 100%;
+}
+
+.text_block {
+    width: 65%;
+}
+
+.profile {
+    width: calc(100% / 4 - 3%);
+    border: 2px solid #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile img {
+    width: 100%;
+}
+
+.profile_content {
+    background-color: #ccc;
+    transition: .5s;
+}
+
+.profile_img {
+    position: relative;
+    display: flex;
+}
+
+.dark {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    transition: .5s;
+}
+
+.profile:hover .dark {
+    opacity: 1;
+}
+
+.profile:hover .profile_content {
+    background-color: brown;
+}
+
+.images img {
+    width: calc(100% / 3 - 3%);
+    margin-bottom: 20px;
+}
+
+.wrap.reverse {
+    flex-direction: row-reverse;
+}
+
+.statistic {
+    background-color: purple;
+}
+
+.statistic p {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.contatcs {
+    text-align: center;
+}
+
+.contatcs h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.contatcs form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contatcs input {
+    width: 400px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.contatcs textarea {
+    width: 400px;
+    font-size: 18px;
+    padding: 10px;
+    height: 250px;
+}
+
+.footer {
+    background-color: #ccc;
+    text-align: center;
+}

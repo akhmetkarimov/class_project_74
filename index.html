@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 </head>
 
 <body>
@@ -19,7 +24,28 @@
 
             <div class="header_nav">
                 <ul class="nav_list">
-                    <li><a href="#">home</a></li>
+                    <li class="dropdown">
+                        <a href="#">
+                            <i class="fas fa-caret-down"></i> home
+                        </a>
+                        <div class="dropdown_content">
+                            <div>
+                                <a href="#">Home page 2</a>
+                                <a href="#">Home page 2</a>
+                                <a href="#">Home page 2</a>
+                                <a href="#">Home page 2</a>
+                                <a href="#">Home page 2</a>
+                            </div>
+                            <div>
+                                <a href="#">Home page 2</a>
+                                <a href="#">Home page 2</a>
+                                <a href="#">Home page 2</a>
+                                <a href="#">Home page 2</a>
+                                <a href="#">Home page 2</a>
+                            </div>
+
+                        </div>
+                    </li>
                     <li><a href="#">pages</a></li>
                     <li><a href="#">about</a></li>
                     <li><a href="#">gallery</a></li>
@@ -129,6 +155,58 @@
             <button class="consult_btn">CONTACT US</button>
         </div>
     </section>
+
+    <div class="carusel container">
+        <div>
+            <img src="images/widgets/icons.png" alt="">
+        </div>
+        <div>
+            <img src="images/widgets/icons.png" alt="">
+        </div>
+        <div>
+            <img src="images/widgets/icons.png" alt="">
+        </div>
+        <div>
+            <img src="images/widgets/icons.png" alt="">
+        </div>
+        <div>
+            <img src="images/widgets/icons.png" alt="">
+        </div>
+        <div>
+            <img src="images/widgets/icons.png" alt="">
+        </div>
+        <div>
+            <img src="images/widgets/icons.png" alt="">
+        </div>
+        <div>
+            <img src="images/widgets/icons.png" alt="">
+        </div>
+        <div>
+            <img src="images/widgets/icons.png" alt="">
+        </div>
+        <div>
+            <img src="images/widgets/icons.png" alt="">
+        </div>
+
+    </div>
+    <style>
+        .carusel {
+            padding: 60px 0;
+            max-width: 1200px;
+            width: 100%;
+            background-color: red;
+        }
+        
+        .slick-prev {
+            left: 0;
+        }
+        
+        .slick-next {
+            right: 0;
+        }
+    </style>
+
+    <script src="js/carusel.js"></script>
 </body>
 
 </html>
