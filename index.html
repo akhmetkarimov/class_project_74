@@ -59,7 +59,7 @@
                 <a href="#" class="fab fa-linkedin-in"></a>
                 <a href="#" class="fab fa-twitter"></a>
             </div>
-            <div class="mobile_bar fas fa-bars"></div>
+            <div class="mobile_bar fas fa-bars" onclick="openMenu('show')"></div>
         </div>
     </header>
 
@@ -76,8 +76,8 @@
             </p>
 
             <div class="btn_row">
-                <button class="detail_btn">DETAILS</button>
-                <button>CONTACT US</button>
+                <button class="detail_btn" onclick="openModal('show')">DETAILS</button>
+                <button onclick="openModal('show')">CONTACT US</button>
             </div>
 
         </div>
@@ -95,7 +95,7 @@
             <h3>Who are we</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis at maxime amet est cumque placeat reiciendis labore fugit molestiae ducimus similique dolor error quidem quibusdam tenetur, iste suscipit dolorem pariatur.</p>
 
-            <button>More info</button>
+            <button onclick="openModal('show')">More info</button>
         </div>
 
     </section>
@@ -152,61 +152,42 @@
                     <p>and we will call you back. Contact us</p>
                 </div>
             </div>
-            <button class="consult_btn">CONTACT US</button>
+            <button class="consult_btn" onclick="openModal('show')">CONTACT US</button>
         </div>
     </section>
 
-    <div class="carusel container">
-        <div>
-            <img src="images/widgets/icons.png" alt="">
-        </div>
-        <div>
-            <img src="images/widgets/icons.png" alt="">
-        </div>
-        <div>
-            <img src="images/widgets/icons.png" alt="">
-        </div>
-        <div>
-            <img src="images/widgets/icons.png" alt="">
-        </div>
-        <div>
-            <img src="images/widgets/icons.png" alt="">
-        </div>
-        <div>
-            <img src="images/widgets/icons.png" alt="">
-        </div>
-        <div>
-            <img src="images/widgets/icons.png" alt="">
-        </div>
-        <div>
-            <img src="images/widgets/icons.png" alt="">
-        </div>
-        <div>
-            <img src="images/widgets/icons.png" alt="">
-        </div>
-        <div>
-            <img src="images/widgets/icons.png" alt="">
+
+    <div id="mobile_nav">
+        <div class="close" onclick="openMenu('close')">X</div>
+        <div class="mobile_content">
+            <ul class="nav_list">
+                <li><a href="#">home</a></li>
+                <li><a href="#">pages</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">gallery</a></li>
+                <li><a href="#">contacts</a></li>
+                <li><a href="#">our teams</a></li>
+            </ul>
+
+            <div class="header_socials">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-linkedin-in"></a>
+                <a href="#" class="fab fa-twitter"></a>
+            </div>
         </div>
 
     </div>
-    <style>
-        .carusel {
-            padding: 60px 0;
-            max-width: 1200px;
-            width: 100%;
-            background-color: red;
-        }
-        
-        .slick-prev {
-            left: 0;
-        }
-        
-        .slick-next {
-            right: 0;
-        }
-    </style>
 
-    <script src="js/carusel.js"></script>
+
+    <div id="modal">
+        <div class="modal_content">
+            <div class="modal_close" onclick="openModal('close')">X</div>
+            Content in modal
+        </div>
+    </div>
+
+
+    <script src="js/mobile_header.js"></script>
 </body>
 
 </html>

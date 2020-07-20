@@ -1,0 +1,26 @@
+#modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_content {
+    position: relative;
+    background-color: #fff;
+    padding: 50px;
+}
+
+.modal_close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: red;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
